@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" initial-scale="1" />
+		<title>Portfolio</title>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+	</head>
+
+	<body>
+		<header role="banner" class="shadowed">
+			<div class="page-wrap clearfix">
+				<a href="/" id="logo">Shravani</a>
+				<nav id="main-nav" role="navigation">
+					<ul>
+						<li><a href="#about" class="on-white">About</a></li>
+						<li><a href="#projects" class="on-white">Projects</a></li>
+						<li><a href="#contact" class="on-white">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section
+			id="home"
+			data-speed="10"
+			data-type="background"
+			style="background-position: 50% -10px;"
+		>
+			<div class="page-wrap">
+				<h1>Shravani PL</h1>
+				<h2>
+					I'm a full stack web developer focused on crafting clean
+					&nbsp;&amp;&nbsp;user‑friendly experience.
+				</h2>
+				<a class="button check-work" href="#portfolio-content">View my work</a>
+			</div>
+		</section>
+
+		<section id="about">
+			<div class="page-wrap info">
+			<img src="/images/dp3.jpg" class="pic" alt="picture"/>
+			<p class="about">
+				I have completed Bachelors in Information Science and have 5 years of experience
+				as a Software Engineer which mainly involved backend development. Have worked for clients
+				like British Telecom, HPE, DXC Technologies and so on. I started developing interest on Javascript so 
+				I joined a Full	Stack Flex Program at	Thinkful to support my passion. I have developed some projects using 
+				 full stack technologies. <br/>
+				Apart from coding I am driven by wanderlust.
+			</p>
+		</section>
+
+		<section id="projects" role="main">
+			<div id="portfolio-content">
+				<article class="portfolio" role="article">
+					<div class="page-wrap clearfix">
+						<div class="info-container">
+							<h3>Gift Savvy</h3>
+							<hr />
+							<p>
+								This is a full-stack web application which is used for tracking
+								gifts. Along with tracking, it is also integrated with gift
+								search where in the user can search the items to be gifted.
+								Based on the search results, on click of each items user is
+								taken to the merchant website for purchasing the gift. <br/>
+
+								<strong> Technologies used: HTML, CSS, Javascript, Node JS, Express, React, Redux, Mongoose, Mocha, Chai, and Enzyme </strong>
+							</p>
+						</div>
+						<figure>
+							<img
+								src="images/gift_savvy.jpg"
+								alt="Gift Savvy"
+								width="960"
+								height="560"
+							/>
+						</figure>
+						<a class="button on-behance" href="https://gift-savvy.herokuapp.com" target="_blank" rel="noopener"
+							>View Demo</a
+						>
+					</div>
+				</article>
+
+				<article class="portfolio" role="article">
+					<div class="page-wrap clearfix">
+						<div class="info-container">
+							<h3>Money Mapper</h3>
+							<hr />
+							<p>
+								This is an expense tracker application where user can track all the expenses incurred.It also p
+								rovides graphical reports for daily, monthly and yearly expenses. <br />
+							<strong>Technologies used: HTML, CSS, Javascript, Node JS, D3.js, Mongoose, Mocha, and Chai.</strong>
+							</p>
+						</div>
+						<figure>
+							<img src="images/money_mapper.jpg" alt="Money mapper" width="960"
+							height="560"/>
+						</figure>
+						<a
+							class="button on-behance"
+							href="https://money-mapper.herokuapp.com" target="_blank" rel="noopener"
+							>View Demo</a
+						>
+					</div>
+				</article>
+
+				<article class="portfolio" role="article">
+					<div class="page-wrap clearfix">
+						<div class="info-container clearfix">
+							<h3>Nutrition Tracker</h3>
+							<hr />
+							<p>
+								This is a nutrition and calorie tracker which provides nutrition details and calories consumed based on the user
+								inputs. It also provides the number of calories burned based on the exercise details given by the user. <br />
+								  <strong>Technologies used: HTML, CSS, Javascript and jquery.</strong>
+							</p>
+						</div>
+						<figure>
+							<img
+								src="images/nutrition_tracker.jpg"
+								alt="Nutrition Tracker"
+								class="nutri"
+							/>
+						</figure>
+						<a
+							class="button on-behance"
+							href="https://shravanipl.github.io/NutritionTracker" target="_blank" rel="noopener"
+							>View Demo</a
+						>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<div id="contact">
+			<p>Did you like my work?</p>
+			<p>Let's connect for further opportunities</p>
+			<a
+				href="https://www.linkedin.com/in/shravanipl"
+				target="_blank"
+				rel="noopener"
+				><i class="fab fa-linkedin" title="Linkedin"></i
+			></a>
+			<a href="https://github.com/shravanipl" target="_blank" rel="noopener"
+				><i class="fab fa-github" title="Github"></i
+			></a>
+			<a
+				href="mailto:pl.shravani@gmail.com?subject=Hello."
+				target="_blank"
+				rel="noopener"
+				><i class="far fa-envelope" title="Email"></i
+			></a>
+		</div>
+		<footer>
+			<div class="page-wrap">
+				<p>Shravani PL <span class="colour">©2019</span></p>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
