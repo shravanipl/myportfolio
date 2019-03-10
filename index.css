@@ -158,7 +158,9 @@ body {
 }
 
 [data-icon]:before {
-    font-family: 'icomoon';
+    /* font-family: 'icomoon'; */
+    font-family: 'Roboto', sans-serif;
+
     content: attr(data-icon);
     speak: none;
     font-weight: normal;
@@ -274,7 +276,6 @@ header[role="banner"].not-fixed {
     text-indent: -9999em;
     width: 68px;
     height: 68px;
-    background: url(./images/L3.jpg);
     background-size: 68px 68px;
     margin-top: 4px;
     border-radius: 40%;
@@ -364,7 +365,8 @@ header[role="banner"] nav {
 
 /* line 363, scss/style.scss */
 #main-nav a {
-    font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+    /* font-family: "Roboto", Helvetica, Arial, sans-serif; */
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
@@ -516,11 +518,18 @@ footer{
    padding: 20px;
 }
 @media (max-width: 860px){
-.info {
-    display: block;
-    max-width: 80%;
+    .info{
+      max-width: 1024px;
+    width: 100%;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    padding: 8rem 0;
+    display: block;
+    align-items: center;
+}
+.info img {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
 }
 }
 
@@ -590,6 +599,10 @@ footer{
     /* line 487, scss/style.scss */ #home h2 {
         padding: 0 20%;
     }
+}
+
+@media screen and (min-width:1500px){
+   
 }
 
 /* line 499, scss/style.scss */
@@ -702,7 +715,7 @@ footer{
 .portfolio {
     margin: 0 auto;
     z-index: 1;
-    background: #fff;
+    background: rgb(248, 248, 248);
     padding: 4.5em 0;
     border-bottom: 1px solid #f1f1f1;
 }
@@ -723,15 +736,6 @@ footer{
     border-bottom: none;
 }
 
-@media screen and (min-width: 1600px) {
- .portfolio .info-container {
-        float: left;
-        width: 30%;
-        text-align: left;
-    }
-}
-
-
 .portfolio .info-container h3 {
     font-size: 1.875em;
     text-align: center;
@@ -742,7 +746,7 @@ footer{
 
 @media screen and (min-width: 1600px) {
      .portfolio .info-container h3 {
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -764,11 +768,10 @@ footer{
 
 @media screen and (min-width: 1600px) {
   .portfolio .info-container hr {
-        width: 30%;
+        width: 100%;
         margin: 1.875em 0;
     }
 }
-
 
 .portfolio .info-container p {
     font-size: 1.3em;
@@ -800,14 +803,6 @@ footer{
     }
 }
 
-@media screen and (min-width: 1600px) {
-   .portfolio .info-container p {
-        text-align: left;
-        width: 100%;
-        margin-left: 0;
-    }
-}
-
 .portfolio .info-container a {
     color: #cd3944;
     text-decoration: none;
@@ -828,6 +823,18 @@ footer{
 
 .portfolio .info-container .button:hover {
     border-bottom: 2px solid #cd3944;
+}
+
+@media screen and (min-width: 1600px) {
+     .portfolio .info-container .on-behance {
+        margin-left: 0;
+        margin-right: 2%;
+    }
+    .portfolio .info-container p {
+    font-size: 1.125em;
+    width: 100%;
+    margin-left: 0;
+}
 }
 
 
@@ -878,12 +885,6 @@ footer{
     }
 }
 
-@media screen and (min-width: 1600px) {
-     .portfolio .info-container .on-behance {
-        margin-left: 0;
-        margin-right: 2%;
-    }
-}
 
 .portfolio .info-container .see-online, .portfolio .info-container .on-behance {
     color: #d24d57;
@@ -913,6 +914,11 @@ footer{
     /* line 708, scss/style.scss */ .portfolio .info-container .online-soon {
         margin: 1.875em 0 1.875em 10%;
     }
+
+        .nutri {
+    max-height: 290px;
+}
+    
 }
 
 /* line 715, scss/style.scss */
@@ -922,15 +928,10 @@ footer{
 
 /* line 720, scss/style.scss */
 .portfolio figure {
-    max-width: 960px;
+    max-width: 660px;
     margin: 0 auto;
 }
 
-@media screen and (min-width: 1600px) {
-    /* line 720, scss/style.scss */ .portfolio figure {
-        float: right;
-    }
-}
 
 /* line 727, scss/style.scss */
 .portfolio img {
@@ -938,7 +939,7 @@ footer{
 }
 
 .nutri{
-  max-width: 50%;
+   max-height: 490px;
 }
 /* ---------------------------------------------------------------------------------------------------------- 
 08 Recent Work Section --------------------------------------------------------------------------------------
